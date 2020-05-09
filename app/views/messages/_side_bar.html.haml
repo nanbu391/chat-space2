@@ -1,0 +1,21 @@
+.side-bar
+  .side-bar__user-name
+    .side-bar__user-name__top-items
+      .side-bar__user-name__top-items__name
+        current_user.name
+      .side-bar__user-name__top-items__icons
+        =link_to "#" do
+          =icon('fas', 'edit')
+        =link_to "#"  do
+          =icon('fas', 'cog')
+        
+        
+        
+          
+  .side-bar__group-list 
+    =link_to "#" , class:"side-bar__group-list__group" do
+      .side-bar__group-list__group
+        .side-bar__group-list__group__group-name 
+          test
+        .side-bar__group-list__group__latest-message  
+          メッセージなし
